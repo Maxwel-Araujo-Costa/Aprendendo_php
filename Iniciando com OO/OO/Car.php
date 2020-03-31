@@ -1,8 +1,18 @@
 <?php
 
-class Car
+require_once("Vehicle.php");
+
+class Car extends Vehicle
 {
-    public $brand;
-    public $color;
-    public $engine;
+    private $doors;
+
+    public function setDoors($doors)
+    {
+        $this->doors = $doors;
+    }
+
+    public function getDoors()
+    {
+        return $this->doors;
+    }
 }

@@ -15,4 +15,9 @@ class Car extends Vehicle
     {
         return $this->doors;
     }
+
+    public function getBrand()
+    {
+        return $this->brand;
+    }
 }

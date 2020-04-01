@@ -1,9 +1,11 @@
 <?php
 
-class Vehicle
+require_once("IVehicle.php");
+
+abstract class Vehicle implements IVehicle
 {
     public $brand;
-    public $color;
+    protected $color;
     public $engine;
 
     public function __construct($brand = null, $color = null)
@@ -17,5 +19,12 @@ class Vehicle
         //return $this->engine . " horsepower";
 
         return "{$this->engine} {$type}";
+    }
+
+    abstract public function getBrand();
+
+    public function getColor()
+    {
+        return $this->color;
     }
 };

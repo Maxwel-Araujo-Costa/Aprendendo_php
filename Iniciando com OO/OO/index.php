@@ -9,9 +9,8 @@ $ferrari = new Car("Ferrari", "Red");
 $ferrari->engine = 488;
 $ferrari->setDoors(2);
 
-$mustang = new Car();
+$mustang = new Car("", "Yellow");
 $mustang->brand = "Mustang";
-$mustang->color = "Yellow";
 $mustang->engine = 300;
 $mustang->setDoors(4);
 
@@ -20,16 +19,13 @@ $m->engine = 150;
 
 
 //echo $ferrari->brand;
-
 //var_dump($mustang);
-
 //echo $mustang->getEngine("HP") . "<br>";
-
 //echo "<br>" . $ferrari->color;
 //echo "<br>" . $ferrari->getEngine();
 //echo $m->getEngine() . "<br>";
 //echo $ferrari->brand;
 //echo $m->color;
 //echo $mustang->color;
-
-echo $mustang->getDoors();
+//echo $mustang->getDoors();
+echo $ferrari->getBrand();

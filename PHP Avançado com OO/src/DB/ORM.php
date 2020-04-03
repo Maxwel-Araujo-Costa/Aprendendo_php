@@ -6,6 +6,7 @@ use BeholderHive\MyException;
 
 class ORM
 {
+
     private $db;
     public function setDb(Db $db)
     {
